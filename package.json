@@ -1,0 +1,29 @@
+{
+  "name": "techgo",
+  "version": "1.0.0",
+  "description": "Экскурсии объеденные в одном маркетплейсе от туристических компаний и гидов по всей России",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start\"",
+    "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
+    "lint": "concurrently \"cd client && npm run lint\" \"cd server && npm run lint\"",
+    "install:project": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm run start",
+    "server:build": "cd server && npm run build",
+    "server:lint": "cd server && npm run lint",
+    "server:install": "cd server && npm install",
+    "client:dev": "cd client && npm run dev",
+    "client:start": "cd client && npm run start",
+    "client:build": "cd client && npm run build",
+    "client:lint": "cd client && npm run lint",
+    "client:install": "cd client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
